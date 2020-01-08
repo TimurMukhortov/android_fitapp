@@ -1204,6 +1204,9 @@ id fill_vertical
 id filled
 id fixed
 id forever
+id fragment_login_enter
+id fragment_login_login
+id fragment_login_password
 id ghost_view
 id gone
 id group_divider
@@ -1475,13 +1478,16 @@ string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
+string enter
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string login
 string mtrl_chip_close_icon_content_description
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
