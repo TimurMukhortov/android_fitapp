@@ -2,10 +2,24 @@
     <string name="app_name">fitApp</string>
 
     <!--LoginFragment-->
+    <string name="register">Регистрация</string>
     <string name="enter">войти</string>
     <string name="login">Логин</string>
     <string name="password">Пароль</string>
 
+    <!--MenuFragment-->
+    <string name="profile">Профиль</string>
+    <string name="journal">Дневник</string>
+    <string name="calculator">Калькулятор</string>
+    <string name="diets">Диеты</string>
+    <string name="notifications">Напоминания</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="gender">Пол</string>
+    <string name="age">Возраст</string>
+    <string name="height">Рост</string>
+    <string name="weight">Вес</string>
 </resources>

@@ -4,9 +4,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 public class MenuFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
@@ -52,8 +52,15 @@ public class MenuFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-        TextView textView = new TextView(getActivity());
-        textView.setText(R.string.hello_blank_fragment);
-        return textView;
+        View rootView = inflater.inflate(R.layout.fragment_menu, container, false);
+        rootView.findViewById(R.id.fragment_menu_profile)
+                .setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Navigation.findNavController(getActivity(), R.id.nav_host_fragment)
+                                .navigate(R.id.action_menuFragment_to_profileFragment);
+                    }
+                });
+        return rootView;
     }
 }

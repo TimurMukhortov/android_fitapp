@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment">
+
+    <TextView
+        android:id="@+id/fragment_profile_name_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_side_medium"
+        android:layout_marginTop="@dimen/margin_side_medium"
+        android:layout_marginEnd="@dimen/margin_side_medium"
+        android:text="@string/user_name"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/fragment_profile_delimiter_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_profile_delimiter_vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4"/>
+
+    <TextView
+        android:id="@+id/fragment_profile_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_side_medium"
+        android:layout_marginTop="@dimen/margin_side_medium"
+        android:layout_marginEnd="@dimen/margin_side_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fragment_profile_delimiter_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Владимир Владимирович Рутковский"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/fragment_profile_barrier_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="fragment_profile_name_label,fragment_profile_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/fragment_profile_gender_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_side_medium"
+        android:layout_marginTop="@dimen/margin_side_medium"
+        android:layout_marginEnd="@dimen/margin_side_medium"
+        android:text="@string/gender"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/fragment_profile_delimiter_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_barrier_name"/>
+
+    <TextView
+        android:id="@+id/fragment_profile_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_side_medium"
+        android:layout_marginTop="@dimen/margin_side_medium"
+        android:layout_marginEnd="@dimen/margin_side_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fragment_profile_delimiter_vertical"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_barrier_name"
+        tools:text="Мужской"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/fragment_profile_barrier_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="fragment_profile_barrier_name,fragment_profile_gender_label,fragment_profile_gender"/>
+
+    <TextView
+        android:id="@+id/fragment_profile_age_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_side_medium"
+        android:layout_marginTop="@dimen/margin_side_medium"
+        android:layout_marginEnd="@dimen/margin_side_medium"
+        android:text="@string/age"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/fragment_profile_delimiter_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_barrier_gender"/>
+
+    <TextView
+        android:id="@+id/fragment_profile_age"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_side_medium"
+        android:layout_marginTop="@dimen/margin_side_medium"
+        android:layout_marginEnd="@dimen/margin_side_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fragment_profile_delimiter_vertical"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_barrier_gender"
+        tools:text="24"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/fragment_profile_barrier_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="fragment_profile_barrier_gender,fragment_profile_age_label,fragment_profile_age"/>
+
+    <TextView
+        android:id="@+id/fragment_profile_height_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_side_medium"
+        android:layout_marginTop="@dimen/margin_side_medium"
+        android:layout_marginEnd="@dimen/margin_side_medium"
+        android:text="@string/height"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/fragment_profile_delimiter_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_barrier_age"/>
+
+    <TextView
+        android:id="@+id/fragment_profile_height"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_side_medium"
+        android:layout_marginTop="@dimen/margin_side_medium"
+        android:layout_marginEnd="@dimen/margin_side_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fragment_profile_delimiter_vertical"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_barrier_age"
+        tools:text="178"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/fragment_profile_barrier_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="fragment_profile_barrier_age,fragment_profile_height_label,fragment_profile_height"/>
+
+    <TextView
+        android:id="@+id/fragment_profile_weight_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_side_medium"
+        android:layout_marginTop="@dimen/margin_side_medium"
+        android:layout_marginEnd="@dimen/margin_side_medium"
+        android:text="@string/weight"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/fragment_profile_delimiter_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_barrier_height"/>
+
+    <TextView
+        android:id="@+id/fragment_profile_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_side_medium"
+        android:layout_marginTop="@dimen/margin_side_medium"
+        android:layout_marginEnd="@dimen/margin_side_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fragment_profile_delimiter_vertical"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_barrier_height"
+        tools:text="120"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_side_large">32dp</dimen>
+    <dimen name="margin_side_medium">16dp</dimen>
+    <dimen name="margin_side_small">8dp</dimen>
+    <dimen name="button_default_height">78dp</dimen>
+</resources>

@@ -67,6 +67,14 @@ public class LoginFragment extends Fragment {
                                 .navigate(R.id.action_loginFragment_to_menuFragment);
                     }
                 });
+        rootView.findViewById(R.id.fragment_login_register)
+                .setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Navigation.findNavController(getActivity(), R.id.nav_host_fragment)
+                                .navigate(R.id.action_loginFragment_to_registrationFragment);
+                    }
+                });
         return rootView;
     }
 }
